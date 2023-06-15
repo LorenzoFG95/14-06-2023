@@ -6,11 +6,12 @@ const Item = (currentItem) => {
     const onCheck = () => toggleCompleted(!isCompleted);
     const [deleted, del] = useState(false);
     const onDelete = () => del(true)
+    
     if (deleted) {return};
     return(
     <li className={`Todo__list--item${isCompleted && " completed" || ""}`} key={currentItem.data.id}>
          <input type="checkbox" checked={isCompleted} onChange={onCheck} />
-         {currentItem.data.todo}
+         {currentItem.data.title}
          <button className='del' onClick={onDelete}>x</button>
     </li>
     )

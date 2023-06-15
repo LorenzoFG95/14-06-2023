@@ -1,11 +1,12 @@
 import Todo from './components/todo'
-import Title from './components/title'
 import './App.css'
 
 function App() {
+  //in mobile è più bello
   return (
   <div className="App">
-    <Title text='ToDooooooooo list'/>
+    <Todo itemLength={16}/>
+    <Todo itemLength={32}/>
     <Todo/>
   </div>
   )

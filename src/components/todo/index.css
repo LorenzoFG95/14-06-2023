@@ -1,7 +1,12 @@
-.Todo__list--item {
-    list-style-type: none;
+.Todo__list {
+display: flex;
+flex-direction: column;
+gap: 5px;
+padding-left: 0;
 }
 
-.completed {
-    color: rgba(255, 255, 255, 0.315);
+.Todo {
+    background-color: black;
+    padding: 8px;
+    border-radius: 20px;
 }
